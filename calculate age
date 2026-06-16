@@ -1,0 +1,22 @@
+#----------------------------
+#---- caculate age advanced version and training
+#------------------------------------------
+
+
+age = int(input('please enter your age : '))
+unit = input('please choose time unit: Months, Weeks, Days: ').strip().lower()
+
+months = age*12
+weeks = months*4
+days = age*365
+if unit == 'months':
+    print('you choosed the unit months')
+    print(f'you lived for {months:,} months')
+elif unit== 'weeks':
+    print('you choosed the unit weeks ')
+    print(f'you lived for {weeks:,} weeks')
+elif unit =='days':
+    print('you choosed the until days')
+    print(f'you lived for {days:,}days')
+else:
+    print ('invaled input')
